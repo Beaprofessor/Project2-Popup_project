@@ -10,7 +10,7 @@ body{
     background-color: aquamarine;
 }
 
-.popup-container{
+.pop-container{
     position: fixed;
     top:0;
     left:0;
@@ -20,7 +20,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color: black;
-    z-index:9999;
+    /* z-index:9999; */
     backdrop-filter: blur(10px);
 }
 .pop{
@@ -29,5 +29,54 @@ body{
     padding:20px;
     background-color: beige;
     border-radius: 15px;
-    box-shadow: 0px 0px 20px black;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2),
+    inset 0px 0px 10px rgba(255,255,255,0.5),
+    inset   0px 0px 20px rgba(0,0,0,0.1);  
+}
+.pop-header{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+
+}
+.pop-header h2{
+    margin: 0;
+    
+}
+.pop-header button{
+    border:none;
+    background-color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+    color: grey;
+    transition: all 0.3s ease-in-out;
+}
+
+.pop-header button:hover{
+color: black;
+}
+
+.pop-content{
+    margin-top: 20px;
+    color: aquamarine;
+}
+
+#open-btn{
+    margin-top:20px;
+    padding:10px 20px;
+    border: none;
+    border-radius:20px;
+    background-color: aquamarine;
+    color:black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+
+#open-btn:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2),
+    inset 0px 0px 5px rgba(255,255,255,0.5),
+    inset   0px 0px 10px rgba(0,0,0,0.1);  
 }
