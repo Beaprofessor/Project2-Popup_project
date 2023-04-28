@@ -1,50 +1,54 @@
-*{
+* {
     box-sizing: border-box;
-    
+
 }
 
-body{
-    margin:0px;
+body {
+    margin: 0px;
     padding: 0px;
     font-family: sans-serif;
-    background-color: aquamarine;
+    background-color:beige;
 }
 
-.popup-container{
+.popup-container {
     position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: none;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    /* z-index:9999; */
+    background-color: wheat;
+    z-index:9999;
     backdrop-filter: blur(10px);
 }
-.popup{
+
+.popup {
     position: relative;
     width: 400px;
-    padding:20px;
+    padding: 20px;
     background-color: beige;
     border-radius: 15px;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.2),
-    inset 0px 0px 10px rgba(255,255,255,0.5),
-    inset   0px 0px 20px rgba(0,0,0,0.1);  
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2),
+        inset 0px 0px 10px rgba(255, 255, 255, 0.5),
+        inset 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
-.popup-header{
-      display:flex;
-      justify-content: space-between;
-      align-items: center;
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
-.popup-header h2{
+
+.popup-header h2 {
     margin: 0;
-    
+
 }
-.popup-header button{
-    border:none;
+
+.popup-header button {
+    border: none;
     background-color: transparent;
     font-size: 30px;
     cursor: pointer;
@@ -52,31 +56,35 @@ body{
     transition: all 0.3s ease-in-out;
 }
 
-.popup-header button:hover{
-color: black;
+.popup-header button:hover {
+    color: black;
 }
 
-.popup-content{
+.popup-content {
     margin-top: 20px;
-    color: aquamarine;
+    color: black;
 }
 
-#open-btn{
-    margin-top:20px;
-    padding:10px 20px;
+#open-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
     border: none;
-    border-radius:20px;
-    background-color:white;
-    color:black;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 
 }
 
-#open-btn:hover{
-    background-color:burlywood;
+#open-btn:hover {
+    background-color: burlywood;
     color: black;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.2),
-    inset 0px 0px 5px rgba(255,255,255,0.5),
-    inset   0px 0px 10px rgba(0,0,0,0.1);  
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2),
+        inset 0px 0px 5px rgba(255, 255, 255, 0.5),
+        inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blur {
+    backdrop-filter: blur(10px);
 }
