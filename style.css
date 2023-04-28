@@ -10,7 +10,7 @@ body{
     background-color: aquamarine;
 }
 
-.pop-container{
+.popup-container{
     position: fixed;
     top:0;
     left:0;
@@ -23,7 +23,7 @@ body{
     /* z-index:9999; */
     backdrop-filter: blur(10px);
 }
-.pop{
+.popup{
     position: relative;
     width: 400px;
     padding:20px;
@@ -33,17 +33,17 @@ body{
     inset 0px 0px 10px rgba(255,255,255,0.5),
     inset   0px 0px 20px rgba(0,0,0,0.1);  
 }
-.pop-header{
+.popup-header{
       display:flex;
       justify-content: space-between;
       align-items: center;
 
 }
-.pop-header h2{
+.popup-header h2{
     margin: 0;
     
 }
-.pop-header button{
+.popup-header button{
     border:none;
     background-color: transparent;
     font-size: 30px;
@@ -52,11 +52,11 @@ body{
     transition: all 0.3s ease-in-out;
 }
 
-.pop-header button:hover{
+.popup-header button:hover{
 color: black;
 }
 
-.pop-content{
+.popup-content{
     margin-top: 20px;
     color: aquamarine;
 }
@@ -66,7 +66,7 @@ color: black;
     padding:10px 20px;
     border: none;
     border-radius:20px;
-    background-color: aquamarine;
+    background-color:white;
     color:black;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -74,7 +74,7 @@ color: black;
 }
 
 #open-btn:hover{
-    background-color: white;
+    background-color:burlywood;
     color: black;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.2),
     inset 0px 0px 5px rgba(255,255,255,0.5),
